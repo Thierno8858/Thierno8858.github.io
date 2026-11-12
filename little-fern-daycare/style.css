@@ -1,0 +1,50 @@
+/* Basic styling for the Little Fern website */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #fafaf7;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #dfe9dc;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 { margin: 0 0 10px; }
+nav a { margin: 0 10px; color: #28563b; }
+
+main { max-width: 850px; margin: auto; padding: 20px; }
+section { padding: 20px 0; border-bottom: 1px solid #ddd; }
+.welcome { background-color: #edf3e9; padding: 25px; }
+h2 { color: #28563b; }
+
+button {
+  background-color: #356b4b;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px 5px 5px 0;
+  cursor: pointer;
+}
+button:hover { background-color: #244b34; }
+
+label { display: block; margin-top: 12px; }
+input, textarea {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+#confirmation { color: #28563b; font-weight: bold; }
+footer { text-align: center; background-color: #dfe9dc; padding: 15px; }
+
+/* Small adjustment for phones */
+@media (max-width: 600px) {
+  main { padding: 10px; }
+  nav a { margin: 0 5px; }
+}

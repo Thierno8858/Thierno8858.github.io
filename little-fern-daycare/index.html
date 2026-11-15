@@ -40,14 +40,34 @@
       <ul id="schedule-list"></ul>
     </section>
 
+    <section id="availability">
+      <h2>Ask About Openings</h2>
+      <p>Select an age group to see which program to ask about.</p>
+
+      <label for="age-group">Child's age group</label>
+      <select id="age-group">
+        <option value="">Choose an age group</option>
+        <option value="toddlers">18 months to 3 years</option>
+        <option value="preschool">3 to 5 years</option>
+      </select>
+
+      <p id="availability-result" aria-live="polite"></p>
+      <p>Actual openings have not been confirmed. Please contact the daycare to ask about availability.</p>
+    </section>
+
     <section id="updates">
       <h2>News and Updates</h2>
-      <p>We will add announcements and upcoming events here.</p>
+      <p>Here are a few examples of updates we may share with parents.</p>
+      <ul>
+        <li>Upcoming: Family open house (date to be announced).</li>
+        <li>Activity idea: Nature-themed arts and crafts.</li>
+      </ul>
     </section>
 
     <section id="contact">
       <h2>Contact / Request a Tour</h2>
-      <p>This is a sample form for the class project. It does not send information anywhere.</p>
+      <p>Interested in learning more? Fill out the form below. This form does not send information yet.</p>
+
       <form id="tour-form">
         <label for="name">Your name</label>
         <input type="text" id="name" required>
@@ -56,16 +76,18 @@
         <input type="email" id="email" required>
 
         <label for="message">Message (optional)</label>
-        <textarea id="message" rows="3"></textarea>
+        <textarea id="message" rows="3" maxlength="200"></textarea>
+        <p id="character-count">0 / 200 characters</p>
 
         <button type="submit">Submit Request</button>
       </form>
-      <p id="confirmation"></p>
+
+      <p id="confirmation" aria-live="polite"></p>
     </section>
   </main>
 
   <footer>
-    <p>Little Fern Daycare — INST630 class project</p>
+    <p>Little Fern Daycare — INST630 Class Project</p>
   </footer>
 </body>
 </html>

@@ -29,9 +29,11 @@ button {
   margin: 5px 5px 5px 0;
   cursor: pointer;
 }
+
 button:hover { background-color: #244b34; }
 
 label { display: block; margin-top: 12px; }
+
 input, textarea {
   display: block;
   width: 100%;
@@ -41,10 +43,45 @@ input, textarea {
 }
 
 #confirmation { color: #28563b; font-weight: bold; }
-footer { text-align: center; background-color: #dfe9dc; padding: 15px; }
+
+footer {
+  text-align: center;
+  background-color: #dfe9dc;
+  padding: 15px;
+}
 
 /* Small adjustment for phones */
 @media (max-width: 600px) {
   main { padding: 10px; }
   nav a { margin: 0 5px; }
+}
+
+/* Give form fields a little room and show keyboard focus */
+input, textarea { margin-top: 4px; }
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid #28563b;
+  outline-offset: 2px;
+}
+
+/* Small additions for the new features */
+select {
+  display: block;
+  padding: 8px;
+  margin-top: 4px;
+}
+
+#availability-result {
+  font-weight: bold;
+  color: #28563b;
+}
+
+#character-count {
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+select:focus {
+  outline: 2px solid #28563b;
+  outline-offset: 2px;
 }
